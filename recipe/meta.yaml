@@ -1,5 +1,5 @@
 {% set name = "rabpro" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/veinsoftheearth/rabpro/archive/v{{ version }}.tar.gz
-  sha256: 2e94f65e6746113d847fb348fe8409fac8016a9b12b989822735fb5b01b681bf
+  sha256: 4bc0eb8830f4b5a4d6e512118eef3a33a66de919c20f4cad52482549b63b73d8
   # sha256 is the preferred checksum -- you can get it for a file with:
   #  `openssl sha256 <file name>`.  
 
@@ -31,9 +31,9 @@ requirements:
     - shapely
     - requests
     - appdirs
+    - gdown
     - tqdm
     - colorama
-    - py-opencv
     - beautifulsoup4
     - earthengine-api
 
