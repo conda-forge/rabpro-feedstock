@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/veinsoftheearth/rabpro/archive/v{{ version }}.tar.gz
-  sha256: 62bb308829b48a36d2349e0d9d6c5b0ce3959423d976c9278f2c5b43ac92b54a
+  sha256: 4bcab1782455b595249801593606a03d9a1a87a8cd6b76a5cb7f57bc88bcedf5
   # sha256 is the preferred checksum -- you can get it for a file with:
   #  `openssl sha256 <file name>`.  
 
