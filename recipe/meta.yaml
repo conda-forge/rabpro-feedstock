@@ -13,15 +13,15 @@ source:
 
 build:
   noarch: python
-  number: 0  
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
-requirements:  
+requirements:
   host:
     - pip
     - python >=3.7
-    
-  
+
+
   run:
     - python >=3.7,<3.10
     - numpy
@@ -37,22 +37,22 @@ requirements:
     - beautifulsoup4
     - earthengine-api
 
-test:  
+test:
   imports:
-  - rabpro
+    - rabpro
 
 about:
-  home: https://github.com/VeinsOfTheEarth/rabpro  
+  home: https://github.com/VeinsOfTheEarth/rabpro
   license: BSD-3-Clause
-  license_family: BSD  
+  license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Package to delineate subbasins and compute statistics.'  
+  summary: 'Package to delineate subbasins and compute statistics.'
   description: |
     rabpro computes longitudinal river profiles,
     global watershed delineation, watershed stats.    
   doc_url: https://veinsoftheearth.github.io/rabpro
   dev_url: https://github.com/VeinsOfTheEarth/rabpro
 extra:
-  recipe-maintainers:    
+  recipe-maintainers:
     - jsta
     - jonschwenk
