@@ -1,5 +1,5 @@
 {% set name = "rabpro" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/veinsoftheearth/rabpro/archive/v{{ version }}.tar.gz
-  sha256: 4bc0eb8830f4b5a4d6e512118eef3a33a66de919c20f4cad52482549b63b73d8
+  sha256: 4bcab1782455b595249801593606a03d9a1a87a8cd6b76a5cb7f57bc88bcedf5
   # sha256 is the preferred checksum -- you can get it for a file with:
   #  `openssl sha256 <file name>`.  
 
@@ -23,11 +23,11 @@ requirements:
     
   
   run:
-    - python >=3.7
+    - python >=3.7,<3.10
     - numpy
     - geopandas >=0.7.0
-    - scikit-image    
-    - pyproj
+    - scikit-image
+    - pyproj >2.2.0
     - shapely
     - requests
     - appdirs
