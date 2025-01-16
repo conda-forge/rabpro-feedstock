@@ -20,11 +20,10 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3.7
-    
+    - python {{ python_min }}    
   
   run:
-    - python >=3.7,<3.10
+    - python >={{ python_min }},<3.10
     - numpy
     - geopandas >=0.7.0
     - scikit-image
@@ -39,6 +38,8 @@ requirements:
     - earthengine-api
 
 test:  
+  requires:
+    - python {{ python_min }}
   imports:
   - rabpro
 
