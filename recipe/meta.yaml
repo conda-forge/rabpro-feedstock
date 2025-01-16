@@ -13,17 +13,17 @@ source:
 
 build:
   noarch: python
-  number: 0  
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:  
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     
   
   run:
-    - python >=3.7,<3.10
+    - python >={{ python_min }},<3.10
     - numpy
     - geopandas >=0.7.0
     - scikit-image
@@ -38,6 +38,8 @@ requirements:
     - earthengine-api
 
 test:  
+  requires:
+    - python {{ python_min }}
   imports:
   - rabpro
 
