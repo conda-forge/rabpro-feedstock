@@ -29,6 +29,7 @@ requirements:
     - scikit-image
     - pyproj >2.2.0
     - shapely
+    - gdal
     - requests
     - appdirs
     - gdown
